@@ -120,7 +120,7 @@ $> gcc -I utilities -I linear-algebra/kernels/atax utilities/polybench.c linear-
 --------------------------------------------------------
 
 $> gcc -O3 -I utilities -I linear-algebra/kernels/atax utilities/polybench.c linear-algebra/kernels/atax/atax.c -DPOLYBENCH_TIME -o atax_time
-
+gcc -O3 -I utilities -I -
 
 ** To generate the reference output of a benchmark:
 ---------------------------------------------------
@@ -229,5 +229,3 @@ the desired configuration, for instance to create a full C99 version
 
 $> PARGS="-I utilities -DPOLYBENCH_USE_C99_PROTO";
 $> for i in `cat utilities/benchmark_list`; do ./utilities/create_cpped_version.sh "$i" "$PARGS"; done
-
-

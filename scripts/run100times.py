@@ -3,18 +3,6 @@
 import csv
 import os
 import numpy as np
-def variance(data):
-    sum=0
-    for value in data:
-        sum=sum+value
-    mean=sum/len(data)
-
-    cumulative_error=0
-    for value in data:
-        error = (value-mean)**2
-        cumulative_error=cumulative_error+error;
-    var = cumulative_error/(len(data)-1)
-    return var
 
 NUM_OF_EXECUTIONS=10
 os.system(">execution_times.csv")
