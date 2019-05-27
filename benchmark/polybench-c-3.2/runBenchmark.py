@@ -85,6 +85,8 @@ def printReportSimulation(ex_times_list, start,end_preprocessing, end):
             sum = sum + ex_time
     print("\tof which", round(time_processing-sum, approx), "is overhead")
 
+print("Press enter to start...")
+input()
 #----------------------START----------------------
 start = time.time()
 
