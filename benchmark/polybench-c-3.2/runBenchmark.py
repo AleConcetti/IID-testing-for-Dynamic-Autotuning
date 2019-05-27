@@ -44,6 +44,8 @@ def processing(NUM_OF_EXECUTION, commandList, nameList):
         outFileName = "execution_times_" + name_of_script + ".csv"
 
         call(">execution_times_" + name_of_script + ".csv", shell=True)
+        # Clean up the caches
+        os.system("sync; echo 3 > /proc/sys/vm/drop_caches")
         call(cmd, shell=True)
 
         while name_of_script + "_time" not in os.listdir("."):
@@ -63,6 +65,7 @@ def processing(NUM_OF_EXECUTION, commandList, nameList):
             reader = csv.reader(f)
             for row in reader:
                 ex_times.append(float(list(row)[0]))
+            f.close()
         ex_times_list.append(ex_times)
 
         with open("execution_times_" + name_of_script + ".csv", "a") as f:
@@ -70,8 +73,9 @@ def processing(NUM_OF_EXECUTION, commandList, nameList):
             writer.writerow(["~" * 50])
             writer.writerow(["Avg ExTime: " + str(np.average(ex_times))])
             writer.writerow(["Var ExTime: " + str(np.var(ex_times, ddof=1))])
+            f.close()
 
-        return ex_times_list
+    return ex_times_list
 def printReportSimulation(ex_times_list, start,end_preprocessing, end):
     approx=4
     print("Tot time:",round(end-start, approx))
@@ -85,16 +89,13 @@ def printReportSimulation(ex_times_list, start,end_preprocessing, end):
             sum = sum + ex_time
     print("\tof which", round(time_processing-sum, approx), "is overhead")
 
-print("Press enter to start...")
-input()
 #----------------------START----------------------
 start = time.time()
 
-NUM_OF_EXECUTIONS=2
+NUM_OF_EXECUTIONS=10
 
 #----------------------PREPROCESSING----------------------
 commandList, nameList = prepocessing()
-
 end_preprocessing = time.time();
 
 #----------------------PROCESSING----------------------
