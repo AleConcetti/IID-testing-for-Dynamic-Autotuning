@@ -92,7 +92,7 @@ def printReportSimulation(ex_times_list, start,end_preprocessing, end):
 #----------------------START----------------------
 start = time.time()
 
-NUM_OF_EXECUTIONS=10
+NUM_OF_EXECUTIONS=200
 
 #----------------------PREPROCESSING----------------------
 commandList, nameList = prepocessing()
