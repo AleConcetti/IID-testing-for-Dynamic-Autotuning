@@ -38,7 +38,7 @@ def prepocessing():
     return commandList,nameList
 def processing(NUM_OF_EXECUTION, commandList, nameList):
     ex_times_list = []
-    for i in range(0, len(commandList)):
+    for i in range(0, 1):
         cmd = commandList[i]
         name_of_script = nameList[i]
         outFileName = "execution_times_" + name_of_script + ".csv"
@@ -78,21 +78,29 @@ def processing(NUM_OF_EXECUTION, commandList, nameList):
     return ex_times_list
 def printReportSimulation(ex_times_list, start,end_preprocessing, end):
     approx=4
-    print("Tot time:",round(end-start, approx))
+    f=open("readme_sim.md","w")
     time_preprocessing=round(end_preprocessing-start, approx)
-    print("Time preprocessing:",time_preprocessing)
     time_processing=round(end-end_preprocessing,approx)
-    print("Time for processing:", time_processing)
     sum=0
     for ex_times in ex_times_list:
         for ex_time in ex_times:
             sum = sum + ex_time
+
+    print("Tot time:",round(end-start, approx))
+    print("Time preprocessing:",time_preprocessing)
+    print("Time for processing:", time_processing)
     print("\tof which", round(time_processing-sum, approx), "is overhead")
+
+    f.write("# Metadata\n")
+    f.write("- Tot time: "+str(round(end-start, approx))+"\n")
+    f.write("- Time preprocessing: "+str(time_preprocessing)+"\n")
+    f.write("- Time for processing: "+ str(time_processing)+"\n")
+    f.write("\t- of which "+ str(round(time_processing-sum, approx)) + " is overhead"+"\n")
 
 #----------------------START----------------------
 start = time.time()
 
-NUM_OF_EXECUTIONS=200
+NUM_OF_EXECUTIONS=2
 
 #----------------------PREPROCESSING----------------------
 commandList, nameList = prepocessing()
