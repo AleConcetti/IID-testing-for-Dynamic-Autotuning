@@ -19,7 +19,7 @@ def readDataFromFile(f):
         data.append(float(raw))
     return data
 
-def conv1D(FILTER_LEN):
+def conv1D(FILTER_LEN, data):
     filter = np.ones(FILTER_LEN) / FILTER_LEN
     lim = int(np.floor(FILTER_LEN / 2))
     clear_data = []
@@ -30,10 +30,25 @@ def conv1D(FILTER_LEN):
         clear_data.append(sample)
     return list(np.ones(lim)*clear_data[0])+clear_data+list(np.ones(lim)*clear_data[-1])
 
-SIM="sim0"
+def deleteOutlier(data):
+    mean_data = np.mean(data)
+    var_data = np.sqrt(np.var(data, ddof=1))
+    max_lim = mean_data + 2*var_data
+    min_lim = mean_data - 2*var_data
+
+    clear_data=[]
+    for i in range(len(data)):
+        if(min_lim<data[i] and data[i]<max_lim):
+            clear_data.append(data[i])
+        else:
+            clear_data.append(mean_data)
+
+    return clear_data
+
+SIM="sim1"
 PATH="../../workingFiles/simulation_data/"+SIM+"/execution_times/"
-NUM_OF_BIN=7
-FILTER_LEN=3
+NUM_OF_BIN=30
+FILTER_LEN=21
 name_of_files=readNameOfFiles()
 i=0
 for NAME_OF_FILE in name_of_files:
@@ -41,6 +56,7 @@ for NAME_OF_FILE in name_of_files:
     NAME_OF_PROGRAM = NAME_OF_FILE.replace("execution_times_","").replace(".csv","")
 
     data=readDataFromFile(open(PATH+NAME_OF_FILE))
+    data=deleteOutlier(data)
 
     plt.figure(1, figsize=(15,5))
     plt.suptitle(NAME_OF_PROGRAM)
@@ -56,7 +72,7 @@ for NAME_OF_FILE in name_of_files:
     x = np.linspace(0, len(data), len(data))
     plt.plot(x,data,color="GRAY")
 
-    clear_data=conv1D(FILTER_LEN)
+    clear_data=conv1D(FILTER_LEN,data)
     plt.plot(x,clear_data,color="RED")
     plt.savefig("pdfs/"+str(i)+"_"+NAME_OF_PROGRAM+".pdf")
     i=i+1
