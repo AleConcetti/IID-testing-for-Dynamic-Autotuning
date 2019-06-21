@@ -3,6 +3,7 @@ import os
 import csv
 import numpy as np
 from subprocess import PIPE, call
+
 def prepocessing():
     PATH_POLYBENCH = "utilities"
     f=open(PATH_POLYBENCH+"/benchmark_list","r")
@@ -36,28 +37,35 @@ def prepocessing():
         #print(cmd)
         commandList.append(cmd)
     return commandList,nameList
-def processing(NUM_OF_EXECUTION, commandList, nameList):
+def processing(NUM_OF_EXECUTIONS, CLEAN_UP_CACHES, CPU,commandList, nameList):
     ex_times_list = []
-    for i in range(0, 1):
+    for i in range(len(commandList)):
+        # Get the compiling command #
         cmd = commandList[i]
         name_of_script = nameList[i]
         outFileName = "execution_times_" + name_of_script + ".csv"
 
+        #Create a empty file
         call(">execution_times_" + name_of_script + ".csv", shell=True)
-        # Clean up the caches
-        os.system("sync; echo 3 > /proc/sys/vm/drop_caches")
-        call(cmd, shell=True)
-
+        # Compile the application
+        os.system(cmd)
+        # Wait for compiling end
         while name_of_script + "_time" not in os.listdir("."):
             time.sleep(1)
 
         print("Program ", i, "/", len(commandList), ": ", name_of_script.upper(), sep="")
         for j in range(NUM_OF_EXECUTIONS):
             print("Execution ", j + 1, "/", NUM_OF_EXECUTIONS, sep="")
-            call("./" + name_of_script + "_time >> " + outFileName, shell=True, stdout=PIPE)
+            # Clean up the caches
+            if(CLEAN_UP_CACHES):
+                os.system("sync; echo 3 > /proc/sys/vm/drop_caches")
+            # Run
+            call("taskset -c "+str(CPU)+" ./" + name_of_script + "_time >> " + outFileName, shell=True, stdout=PIPE)
 
         print("Finish!\n")
         print("-" * 20, "\n")
+
+        # Remove the compiled file
         call(("rm " + name_of_script + "_time"), shell=True)
 
         ex_times = []
@@ -97,19 +105,20 @@ def printReportSimulation(ex_times_list, start,end_preprocessing, end):
     f.write("- Time for processing: "+ str(time_processing)+"\n")
     f.write("\t- of which "+ str(round(time_processing-sum, approx)) + " is overhead"+"\n")
 
-#----------------------START----------------------
+#----------------------START--------------------------------
 start = time.time()
 
-NUM_OF_EXECUTIONS=2
-
-#----------------------PREPROCESSING----------------------
+# Knobs
+NUM_OF_EXECUTIONS = 200
+CLEAN_UP_CACHES = True
+CPU = 0
+#----------------------PREPROCESSING------------------------
 commandList, nameList = prepocessing()
-end_preprocessing = time.time();
+end_preprocessing = time.time()
 
-#----------------------PROCESSING----------------------
-ex_times_list = processing(NUM_OF_EXECUTIONS,commandList,nameList)
-
+#----------------------PROCESSING---------------------------
+ex_times_list = processing(NUM_OF_EXECUTIONS,CLEAN_UP_CACHES,CPU , commandList,nameList)
 end = time.time()
 
-#----------------------PRINT REPORT----------------------
+#----------------------PRINT REPORT-------------------------
 printReportSimulation(ex_times_list,start, end_preprocessing,end)
