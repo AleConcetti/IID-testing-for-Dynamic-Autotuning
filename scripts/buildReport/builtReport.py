@@ -1,10 +1,10 @@
 from matplotlib import pyplot as plt
-import numpy as np
 from scipy.stats import norm
 from scipy.stats import ttest_ind
+import numpy as np
 import matplotlib.patches as mpatches
-
 import os
+
 def readNameOfFiles():
     f=open("name_of_files.txt") # generato con ls
     name_of_files=[]
@@ -44,24 +44,44 @@ def deleteOutlier(data):
             clear_data.append(mean_data)
 
     return clear_data
+def splitData(dataset, alternate=False):
+
+    if(not alternate):
+        split_index = int(np.floor(len(dataset) / 2))
+        data3 = dataset[:split_index]
+        data4 = dataset[split_index:]
+        return data3, data4
+    else:
+        data1 = [dataset[i] for i in range(len(dataset)) if i % 2 == 0]
+        data2 = [dataset[i] for i in range(len(dataset)) if i % 2 == 1]
+        return data1, data2
 
 
-SIM="sim3"
+SIM="sim4"
 PATH="../../workingFiles/simulation_data/"+SIM+"/execution_times/"
 NUM_OF_BIN=30
 FILTER_LEN=21
-#name_of_files=readNameOfFiles()
-name_of_files=['execution_times_covariance.csv', 'execution_times_2mm.csv', 'execution_times_durbin.csv','execution_times_gemm.csv', 'execution_times_symm.csv','execution_times_syrk.csv']
+name_of_files=readNameOfFiles()
+#name_of_files=['execution_times_covariance.csv', 'execution_times_2mm.csv', 'execution_times_durbin.csv','execution_times_gemm.csv', 'execution_times_symm.csv','execution_times_syrk.csv']
 i=0
 for NAME_OF_FILE in name_of_files:
-    #NAME_OF_FILE = name_of_files[0]
     NAME_OF_PROGRAM = NAME_OF_FILE.replace("execution_times_","").replace(".csv","")
 
     data_withOutlier=readDataFromFile(open(PATH + NAME_OF_FILE))
     data=deleteOutlier(data_withOutlier)
 
+    data3, data4 = splitData(data)
+    res = ttest_ind(data3, data4, equal_var=False)
+    p = res.pvalue
+    alpha = 0.05
+    isIID = p > alpha
+    result_of_test="IID with p-value "+str(round(p,10))
+    if not isIID:
+        print("[", NAME_OF_PROGRAM, "]", "p-value: " + str(round(p, 10)), "IID: " + str(isIID))
+        result_of_test= "NOT "+result_of_test
+
     plt.figure(1, figsize=(20,5))
-    plt.suptitle(NAME_OF_PROGRAM.upper(), size=20)
+    plt.suptitle(NAME_OF_PROGRAM.upper()+" ("+result_of_test+")", size=20)
 
     plt.subplot(131)
     plt.title("Data occurrence")
@@ -93,20 +113,7 @@ for NAME_OF_FILE in name_of_files:
     plt.close()
 
 
-    split_index=int(np.floor(len(data)/2))
-    data1=[data[i] for i in range(len(data)) if i%2==0]
-    data2=[data[i] for i in range(len(data)) if i%2==1]
 
-    data3=data[:split_index]
-    data4=data[split_index:]
-
-
-    res=ttest_ind(data3,data4,equal_var=False)
-    p=res.pvalue
-    alpha=0.05
-    isIID=p>alpha
-    if not isIID:
-        print("[",NAME_OF_PROGRAM,"]", "p-value: "+str(round(p,10)), "IID: "+ str(isIID))
 
 
 os.system("pdftk pdfs/*.pdf cat output "+SIM+".pdf")

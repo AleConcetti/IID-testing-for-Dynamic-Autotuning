@@ -28,5 +28,3 @@ execution_times_syr2k.csv
 execution_times_syrk.csv
 execution_times_trisolv.csv
 execution_times_trmm.csv
-name_of_files.txt
-sim1.pdf

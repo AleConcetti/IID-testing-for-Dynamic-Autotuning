@@ -36,9 +36,9 @@ def prepocessing():
         #print(cmd)
         commandList.append(cmd)
     return commandList,nameList
-def processing(NUM_OF_EXECUTION, commandList, nameList):
+def processing(NUM_OF_EXECUTIONS, commandList, nameList):
     ex_times_list = []
-    for i in range(0, 1):
+    for i in range(0, NUM_OF_EXECUTIONS):
         cmd = commandList[i]
         name_of_script = nameList[i]
         outFileName = "execution_times_" + name_of_script + ".csv"
@@ -100,7 +100,7 @@ def printReportSimulation(ex_times_list, start,end_preprocessing, end):
 #----------------------START----------------------
 start = time.time()
 
-NUM_OF_EXECUTIONS=2
+NUM_OF_EXECUTIONS=200
 
 #----------------------PREPROCESSING----------------------
 commandList, nameList = prepocessing()
