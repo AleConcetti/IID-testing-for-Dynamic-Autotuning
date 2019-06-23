@@ -32,9 +32,9 @@ def conv1D(FILTER_LEN, data):
     return list(np.ones(lim)*clear_data[0])+clear_data+list(np.ones(lim)*clear_data[-1])
 def deleteOutlier(data):
     mean_data = np.mean(data)
-    var_data = np.sqrt(np.var(data, ddof=1))
-    max_lim = mean_data + 2*var_data
-    min_lim = mean_data - 2*var_data
+    dev_stand_data = np.sqrt(np.var(data, ddof=1))
+    max_lim = mean_data + 2*dev_stand_data
+    min_lim = mean_data - 2*dev_stand_data
 
     clear_data=[]
     for i in range(len(data)):
@@ -57,7 +57,7 @@ def splitData(dataset, alternate=False):
         return data1, data2
 
 
-SIM="sim4"
+SIM="sim6"
 PATH="../../workingFiles/simulation_data/"+SIM+"/execution_times/"
 NUM_OF_BIN=30
 FILTER_LEN=21
@@ -70,7 +70,7 @@ for NAME_OF_FILE in name_of_files:
     data_withOutlier=readDataFromFile(open(PATH + NAME_OF_FILE))
     data=deleteOutlier(data_withOutlier)
 
-    data3, data4 = splitData(data)
+    data3, data4 = splitData(alternate=False, dataset= data)
     res = ttest_ind(data3, data4, equal_var=False)
     p = res.pvalue
     alpha = 0.05

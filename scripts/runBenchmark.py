@@ -78,7 +78,7 @@ def processing(NUM_OF_EXECUTIONS, commandList, nameList):
     return ex_times_list
 def printReportSimulation(ex_times_list, start,end_preprocessing, end):
     approx=4
-    f=open("readme_sim.md","w")
+    f=open("readme_sim4.md","w")
     time_preprocessing=round(end_preprocessing-start, approx)
     time_processing=round(end-end_preprocessing,approx)
     sum=0
