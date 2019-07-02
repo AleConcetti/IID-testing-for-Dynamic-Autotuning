@@ -60,7 +60,12 @@ def processing(NUM_OF_EXECUTIONS, CLEAN_UP_CACHES, CPU,commandList, nameList):
             if(CLEAN_UP_CACHES):
                 os.system("sync; echo 3 > /proc/sys/vm/drop_caches")
             # Run
-            call("taskset -c "+str(CPU)+" ./" + name_of_script + "_time >> " + outFileName, shell=True, stdout=PIPE)
+            if(CPU == -1):
+                run_cmd = "./" + name_of_script + "_time >> " + outFileName
+            else:
+                run_cmd = "taskset -c "+str(CPU)+" ./" + name_of_script + "_time >> " + outFileName
+
+            call(run_cmd, shell=True, stdout=PIPE)
 
         print("Finish!\n")
         print("-" * 20, "\n")
@@ -86,7 +91,7 @@ def processing(NUM_OF_EXECUTIONS, CLEAN_UP_CACHES, CPU,commandList, nameList):
     return ex_times_list
 def printReportSimulation(ex_times_list, start,end_preprocessing, end):
     approx=4
-    f=open("readme_sim4.md","w")
+    f=open("readme_sim.md","w")
     time_preprocessing=round(end_preprocessing-start, approx)
     time_processing=round(end-end_preprocessing,approx)
     sum=0
@@ -110,8 +115,8 @@ start = time.time()
 
 # Knobs
 NUM_OF_EXECUTIONS = 200
-CLEAN_UP_CACHES = False
-CPU = 0
+CLEAN_UP_CACHES = True
+CPU = -1  # Set -1 if you don't want to run the script with taskset
 #----------------------PREPROCESSING------------------------
 commandList, nameList = prepocessing()
 end_preprocessing = time.time()

@@ -57,7 +57,7 @@ def splitData(dataset, alternate=False):
         return data1, data2
 
 
-SIM="sim6"
+SIM="sim7 - with system noise"
 PATH="../../workingFiles/simulation_data/"+SIM+"/execution_times/"
 NUM_OF_BIN=30
 FILTER_LEN=21
