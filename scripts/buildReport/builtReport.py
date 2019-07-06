@@ -57,7 +57,7 @@ def splitData(dataset, alternate=False):
         return data1, data2
 
 
-SIM="sim7 - with system noise"
+SIM="sim7_with_system_noise"
 PATH="../../workingFiles/simulation_data/"+SIM+"/execution_times/"
 NUM_OF_BIN=30
 FILTER_LEN=21
@@ -73,7 +73,7 @@ for NAME_OF_FILE in name_of_files:
     data3, data4 = splitData(alternate=False, dataset= data)
     res = ttest_ind(data3, data4, equal_var=False)
     p = res.pvalue
-    alpha = 0.05
+    alpha = 0.025
     isIID = p > alpha
     result_of_test="IID with p-value "+str(round(p,10))
     if not isIID:
@@ -109,11 +109,8 @@ for NAME_OF_FILE in name_of_files:
     green_patch = mpatches.Patch(color='LIGHTGREEN', label='data with no outlier')
     red_patch = mpatches.Patch(color='RED', label='data mean')
     plt.legend(handles=[gray_patch,green_patch,red_patch], loc=1)
-    plt.savefig("pdfs/"+str(i)+"_"+NAME_OF_PROGRAM+".pdf")
+    plt.savefig("pdfs/"+NAME_OF_PROGRAM+".pdf")
     plt.close()
-
-
-
 
 
 os.system("pdftk pdfs/*.pdf cat output "+SIM+".pdf")
