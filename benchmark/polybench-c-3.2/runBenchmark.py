@@ -115,7 +115,7 @@ start = time.time()
 
 # Knobs
 NUM_OF_EXECUTIONS = 200
-CLEAN_UP_CACHES = True
+CLEAN_UP_CACHES = False
 CPU = -1  # Set -1 if you don't want to run the script with taskset
 #----------------------PREPROCESSING------------------------
 commandList, nameList = prepocessing()
