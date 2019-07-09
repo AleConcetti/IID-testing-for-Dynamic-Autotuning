@@ -120,7 +120,6 @@ $> gcc -I utilities -I linear-algebra/kernels/atax utilities/polybench.c linear-
 --------------------------------------------------------
 
 $> gcc -O3 -I utilities -I linear-algebra/kernels/atax utilities/polybench.c linear-algebra/kernels/atax/atax.c -DPOLYBENCH_TIME -o atax_time
-gcc -O3 -I utilities -I -
 
 ** To generate the reference output of a benchmark:
 ---------------------------------------------------
