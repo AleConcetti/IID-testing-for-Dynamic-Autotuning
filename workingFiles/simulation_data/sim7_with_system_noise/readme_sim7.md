@@ -1,13 +1,13 @@
 # Metadata
 
-- Performance:
+## Performance:
 
     - Tot time: 24737.7256
     - Time preprocessing: 0.0004
     - Time for processing: 24737.7252
         - of which 1009.0553 is overhead
 
-- Environment:
+## Environment:
 
     - Clean up caches every iteration
     - Freqency 1.5 GHz
@@ -15,11 +15,10 @@
     - no cpu isolate
     - no taskset
     
-- Result test:
+## Result test:
 
-    - [ 2mm ] p-value: 0.0 IID: False
-    - [ bicg ] p-value: 0.0006419154 IID: False
-    - [ correlation ] p-value: 0.0017521098 IID: False
-    - [ floyd-warshall ] p-value: 0.0267720007 IID: False
-    - [ lu ] p-value: 1.02545e-05 IID: False
-    - [ trisolv ] p-value: 0.0007845673 IID: False
+- [ 2mm ] p-value: 0.0024806002 IID: False
+- [ bicg ] p-value: 0.0270742666 IID: False
+- [ lu ] p-value: 0.0029190172 IID: False
+- [ ludcmp ] p-value: 0.0029084751 IID: False
+- [ syrk ] p-value: 0.0076487001 IID: False

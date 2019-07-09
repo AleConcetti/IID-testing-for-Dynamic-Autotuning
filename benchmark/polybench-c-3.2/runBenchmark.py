@@ -50,8 +50,11 @@ def processing(NUM_OF_EXECUTIONS, CLEAN_UP_CACHES, CPU,commandList, nameList):
         # Compile the application
         os.system(cmd)
         # Wait for compiling end
+        print("Compiled!")
         while name_of_script + "_time" not in os.listdir("."):
             time.sleep(1)
+            print(os.listdir("."))
+            print("mi sono piantato")
 
         print("Program ", i, "/", len(commandList), ": ", name_of_script.upper(), sep="")
         for j in range(NUM_OF_EXECUTIONS):
@@ -120,6 +123,13 @@ CPU = -1  # Set -1 if you don't want to run the script with taskset
 #----------------------PREPROCESSING------------------------
 commandList, nameList = prepocessing()
 end_preprocessing = time.time()
+
+i=0
+while("symm" not in commandList[i]):
+    commandList.remove(commandList[i])
+i=0
+while("symm" not in nameList[i]):
+    nameList.remove(nameList[i])
 
 #----------------------PROCESSING---------------------------
 ex_times_list = processing(NUM_OF_EXECUTIONS,CLEAN_UP_CACHES,CPU , commandList,nameList)

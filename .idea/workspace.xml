@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bcb6679-0f7d-4845-b2bc-0843d1cc50bc" name="Default Changelist" comment="sim2">
+      <change afterPath="$PROJECT_DIR$/scripts/buildReport/analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workingFiles/brainstorming.md" beforeDir="false" afterPath="$PROJECT_DIR$/workingFiles/program_names.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark/polybench-c-3.2/README" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/polybench-c-3.2/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark/polybench-c-3.2/runBenchmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/polybench-c-3.2/runBenchmark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/buildReport/builtReport.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/buildReport/builtReport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workingFiles/simulation_data/sim4_vergine/readme_sim4.md" beforeDir="false" afterPath="$PROJECT_DIR$/workingFiles/simulation_data/sim4_vergine/readme_sim4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workingFiles/simulation_data/sim5_with_DVFS/readme_sim5.md" beforeDir="false" afterPath="$PROJECT_DIR$/workingFiles/simulation_data/sim5_with_DVFS/readme_sim5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workingFiles/simulation_data/sim6_with_shared_cache/readme_sim6.md" beforeDir="false" afterPath="$PROJECT_DIR$/workingFiles/simulation_data/sim6_with_shared_cache/readme_sim6.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workingFiles/simulation_data/sim7_with_system_noise/readme_sim7.md" beforeDir="false" afterPath="$PROJECT_DIR$/workingFiles/simulation_data/sim7_with_system_noise/readme_sim7.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,124 +20,63 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_3mm.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="406">
-              <caret line="201" column="12" selection-start-line="201" selection-start-column="12" selection-end-line="201" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_seidel-2d.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="406">
-              <caret line="201" column="16" lean-forward="true" selection-start-line="201" selection-start-column="16" selection-end-line="201" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_symm.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="430">
-              <caret line="202" column="13" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_syr2k.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="406">
-              <caret line="201" column="13" selection-start-line="201" selection-start-column="13" selection-end-line="201" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_bicg.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-4418" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_correlation.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-4418" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_lu.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-4418" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_trisolv.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="430">
-              <caret line="190" column="4" lean-forward="true" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/buildReport/builtReport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+            <state relative-caret-position="575">
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
-                <element signature="e#195#409#0" />
-                <element signature="e#439#558#0" />
-                <element signature="e#593#976#0" />
-                <element signature="e#1006#1384#0" />
-                <element signature="e#1431#1789#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/scipy/stats/stats.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1831">
-              <caret line="4451" column="24" selection-start-line="4451" selection-start-column="18" selection-end-line="4451" selection-end-column="24" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim10_with_corunning_apps/readme_sim.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="240">
+                <caret line="10" selection-start-line="10" selection-end-line="10" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim9_system_noise_and_shared_cache/execution_times/execution_times_correlation.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim10_with_corunning_apps/execution_times/execution_times_correlation.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="419">
+              <caret line="200" column="50" selection-start-line="200" selection-start-column="50" selection-end-line="200" selection-end-column="50" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -137,6 +84,9 @@
       <find>polybench_start_instruments</find>
       <find>polybench_timer_start</find>
       <find>rtclock</find>
+      <find>data3\, data4 \= splitData\(alternate\=False\, dataset\= data\)\n    res \= ttest_ind\(data3\, data4\, equal_var\=False\)\n    p \= res\.pvalue|data3\, data4 \= splitData\(alternate\=False\, dataset\= data\)\n    res \= ttest_ind\(data3\, data4\, equal_var\=False\)\n    p \= res\.pvalue</find>
+      <find>mv</find>
+      <find>symm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,7 +113,6 @@
         <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim6/readme_sim6.md" />
         <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim5/readme_sim5.md" />
         <option value="$PROJECT_DIR$/benchmark/polybench-c-3.2/readme_sim7" />
-        <option value="$PROJECT_DIR$/benchmark/polybench-c-3.2/runBenchmark.py" />
         <option value="$PROJECT_DIR$/benchmark/polybench-c-3.2/readme_sim7.md" />
         <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim7/readme_sim7.md" />
         <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/readme_sim5.md" />
@@ -173,12 +122,24 @@
         <option value="$PROJECT_DIR$/workingFiles/program_names.txt" />
         <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_symm.csv" />
         <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_syr2k.csv" />
+        <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim8_with_turbo/readme_sim8.md" />
+        <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim4_vergine/readme_sim4.md" />
+        <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim5_with_DVFS/readme_sim5.md" />
+        <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim6_with_shared_cache/readme_sim6.md" />
+        <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim7_with_system_noise/readme_sim7.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim9_system_noise_and_shared_cache/readme_sim.md" />
+        <option value="$PROJECT_DIR$/benchmark/polybench-c-3.2/runBenchmark.py" />
+        <option value="$PROJECT_DIR$/benchmark/polybench-c-3.2/README" />
+        <option value="$PROJECT_DIR$/scripts/buildReport/analysis.py" />
+        <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim10_with_corunning_apps/readme_sim.md" />
+        <option value="$PROJECT_DIR$/workingFiles/simulation_data/sim10_with_corunning_apps/execution_times/execution_times_correlation.csv" />
         <option value="$PROJECT_DIR$/scripts/buildReport/builtReport.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="196" />
+    <option name="y" value="27" />
     <option name="width" value="960" />
     <option name="height" value="1053" />
   </component>
@@ -187,6 +148,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,25 +178,35 @@
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="buildReport" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GitFiles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="workingFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitFiles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="workingFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="simulation_data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim7" />
-      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim6" />
-      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim5" />
-      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim5/execution_times" />
-      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim4" />
+      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim10_with_corunning_apps" />
+      <recent name="$PROJECT_DIR$/workingFiles/simulation_data" />
+      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim9_system_noise_and_shared_cache" />
+      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim8_with_turbo" />
+      <recent name="$PROJECT_DIR$/workingFiles/simulation_data/sim7_with_system_noise" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/benchmark/polybench-c-3.2" />
@@ -397,23 +369,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18205805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969433" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3043478" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32873806" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23144105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33624455" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2183406" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.07860262" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -427,144 +398,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="sim2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim0/execution_times/execution_times_correlation.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmark/polybench-c-3.2/datamining/correlation/correlation.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim0/execution_times/execution_times_fdtd-apml.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim0/execution_times/execution_times_jacobi-2d-imper.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim0/execution_times/execution_times_syrk.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="8" lean-forward="true" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim3/execution_times/execution_times_covariance.csv" />
-    <entry file="file://$PROJECT_DIR$/scripts/prova.csv" />
-    <entry file="file://$PROJECT_DIR$/scripts/plotSample.py" />
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim1/execution_times/execution_times_dynprog.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="8" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim1/execution_times/execution_times_gramschmidt.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="1" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/matplotlib/figure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim0/execution_times/execution_times_2mm.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim1/readme_sim1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/buildReport/pdfs/DO_NOT_DELETE_THIS_FOLDER" />
-    <entry file="file://$PROJECT_DIR$/benchmark/polybench-c-3.2/readme_sim.txt" />
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim0/readme_sim0.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="168">
-            <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim2/readme_sim2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmark/polybench-c-3.2/runSomePrograms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-          <folding>
-            <element signature="e#110#986#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/runBenchmark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
-          <folding>
-            <element signature="e#1048#2555#0" />
-            <element signature="e#2632#3444#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/execution_times/execution_times_correlation.csv" />
     <entry file="file:///usr/lib/python3.7/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,13 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmark/polybench-c-3.2/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -602,13 +428,6 @@
     <entry file="file://$PROJECT_DIR$/workingFiles/Test_differenza_tra_medie.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/buildReport/name_of_files.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/workingFiles/program_names.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -616,179 +435,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/readme_sim5.md">
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/readme_sim5.md" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim4 - vergine/readme_sim4.md" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/readme_sim7.md" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/execution_times/execution_times_3mm.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/execution_times/execution_times_fdtd-2d.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/execution_times/execution_times_gemm.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/readme_sim6.md" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_3mm.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_seidel-2d.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_symm.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_syr2k.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_bicg.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_correlation.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_lu.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_trisolv.csv" />
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/scipy/stats/stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="4459" column="16" selection-start-line="4459" selection-start-column="16" selection-end-line="4459" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/buildReport/name_of_files.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim4_vergine/execution_times/execution_times_2mm.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/runBenchmark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim4_vergine/execution_times/execution_times_correlation.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmark/polybench-c-3.2/execution_times_correlation.csv" />
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7_with_system_noise/execution_times/execution_times_atax.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-2160" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim4_vergine/execution_times/execution_times_atax.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5_with_DVFS/execution_times/execution_times_atax.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-4377" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim4_vergine/readme_sim4.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="314">
-            <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <first_editor relative-caret-position="406">
+            <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5_with_DVFS/readme_sim5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="408">
+            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6_with_shared_cache/readme_sim6.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7_with_system_noise/readme_sim7.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim8_with_turbo/readme_sim8.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="216">
+            <caret line="9" selection-start-line="9" selection-end-line="18" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmark/polybench-c-3.2/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmark/polybench-c-3.2/runBenchmark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="91" column="71" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
+        <state relative-caret-position="432">
+          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#111#987#0" />
-            <element signature="e#1071#2995#0" />
+            <element signature="e#3172#3984#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim4 - vergine/readme_sim4.md">
+    <entry file="file://$PROJECT_DIR$/scripts/buildReport/analysis.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim9_system_noise_and_shared_cache/readme_sim.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="386">
-            <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <first_editor relative-caret-position="264">
+            <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/readme_sim7.md">
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="3117" selection-start-line="3117" selection-end-line="3117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/numpy/core/_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim9_system_noise_and_shared_cache/execution_times/execution_times_correlation.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim10_with_corunning_apps/execution_times/execution_times_correlation.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="419">
+          <caret line="200" column="50" selection-start-line="200" selection-start-column="50" selection-end-line="200" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim10_with_corunning_apps/readme_sim.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="314">
-            <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <first_editor relative-caret-position="240">
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/execution_times/execution_times_3mm.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="406">
-          <caret line="201" column="17" selection-start-line="201" selection-start-column="12" selection-end-line="201" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/execution_times/execution_times_fdtd-2d.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="406">
-          <caret line="201" column="17" selection-start-line="201" selection-start-column="12" selection-end-line="201" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim5 - with DVFS/execution_times/execution_times_gemm.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-4418" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/readme_sim6.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="24">
-            <caret line="3" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_3mm.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="406">
-          <caret line="201" column="12" selection-start-line="201" selection-start-column="12" selection-end-line="201" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_seidel-2d.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="406">
-          <caret line="201" column="16" lean-forward="true" selection-start-line="201" selection-start-column="16" selection-end-line="201" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_symm.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="430">
-          <caret line="202" column="13" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim6 - with shared cache/execution_times/execution_times_syr2k.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="406">
-          <caret line="201" column="13" selection-start-line="201" selection-start-column="13" selection-end-line="201" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_bicg.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-4418" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_correlation.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-4418" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_lu.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-4418" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workingFiles/simulation_data/sim7 - with system noise/execution_times/execution_times_trisolv.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="430">
-          <caret line="190" column="4" lean-forward="true" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/buildReport/builtReport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        <state relative-caret-position="575">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
-            <element signature="e#195#409#0" />
-            <element signature="e#439#558#0" />
-            <element signature="e#593#976#0" />
-            <element signature="e#1006#1384#0" />
-            <element signature="e#1431#1789#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/scipy/stats/stats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1831">
-          <caret line="4451" column="24" selection-start-line="4451" selection-start-column="18" selection-end-line="4451" selection-end-column="24" />
         </state>
       </provider>
     </entry>
