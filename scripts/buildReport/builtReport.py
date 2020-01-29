@@ -26,14 +26,11 @@ def conv1D(FILTER_LEN, data):
     filter = np.ones(FILTER_LEN) / FILTER_LEN
     lim = int(np.floor(FILTER_LEN / 2))
     clear_data = []
-    print(lim)
-    print(len(data) - lim)
     for i in range(lim, len(data) - lim):
         sample = 0
         for j in range(FILTER_LEN):
             sample = sample + data[i + (j - lim)] * filter[j]
         clear_data.append(sample)
-    print(clear_data)
     return list(np.ones(lim)*clear_data[0])+clear_data+list(np.ones(lim)*clear_data[-1])
 def deleteOutlier(data):
     mean_data = np.mean(data)
@@ -156,24 +153,18 @@ SIMS ={4: "sim4_vergine",
        10:"sim10_with_corunning_apps"
        }
 
-SIM=SIMS.get(4)
+SIM=SIMS.get(10)
 PATH="../../workingFiles/simulation_data/"+SIM+"/execution_times/"
 NUM_OF_BIN=30
 FILTER_LEN=21
 name_of_files=readNameOfFiles()
 #name_of_files=['execution_times_covariance.csv', 'execution_times_2mm.csv', 'execution_times_durbin.csv','execution_times_gemm.csv', 'execution_times_symm.csv','execution_times_syrk.csv']
 i=0
-j = 0
+not_iid_counting=0
 for NAME_OF_FILE in name_of_files:
     NAME_OF_PROGRAM = NAME_OF_FILE.replace("execution_times_","").replace(".csv","")
 
     data = readDataFromFile(open(PATH + NAME_OF_FILE))
-    #data=deleteOutlier(data_withOutlier)
-    #print(NAME_OF_FILE)
-    #print(isGaussian(data, 0.05))
-    #if(not isGaussian(data, 0.05)):
-    #    j=j+1
-    #    print(i)
 
     alpha=0.05
     res = isIID_v3(data, alpha)
@@ -183,6 +174,7 @@ for NAME_OF_FILE in name_of_files:
     if not is_iid:
         print("[", NAME_OF_PROGRAM, "]", "p-value: " + str(round(p,10)), "IID: " + str(is_iid))
         result_of_test= "NOT "+result_of_test
+        not_iid_counting+=1
 
 
     plt.figure(1, figsize=(20,5))
@@ -213,6 +205,7 @@ for NAME_OF_FILE in name_of_files:
     clear_data=conv1D(FILTER_LEN, data)
     plt.plot(x,clear_data,color="RED")
     i=i+1
+
     gray_patch = mpatches.Patch(color='GRAY', label='data')
     green_patch = mpatches.Patch(color='LIGHTGREEN', label='data with no outlier')
     red_patch = mpatches.Patch(color='RED', label='data mean')
@@ -223,3 +216,7 @@ for NAME_OF_FILE in name_of_files:
 
 os.system("pdftk pdfs/*.pdf cat output "+SIM+".pdf")
 os.system("cd pdfs && ls | grep -v "+SIM+".pdf | xargs rm")
+print("*"*30)
+print("NOT IID COUNTING: ", not_iid_counting)
+print("isIID?", (15 - not_iid_counting)/12)
+print("notIID?", (not_iid_counting - 3)/12)
